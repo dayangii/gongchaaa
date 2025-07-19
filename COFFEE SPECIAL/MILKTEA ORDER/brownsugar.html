@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gong Cha - Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../IMAGES/Screenshot 2025-05-01 200356.png" alt="Gong Cha Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="../HTML/index.html">Home</a>
+            <a href="../HTML/menu.html" class="active">Menu</a>
+            <a href="../HTML/galery.html">Gallery</a>
+            <a href="../HTML/review.html">Reviews</a>
+        </nav>
+    </header>
+
+<section class="product-page">
+    <div class="product-container">
+        <div class="product-image">
+            <img src="../IMAGES/milktea/brownsugarmilktea_new2-removebg-preview.png" alt="Brown Sugar Milk Tea">
+        </div>
+        <div class="product-info">
+            <h2>Brown Sugar Milk Tea</h2>
+            <p class="product-category">Category: Milk Tea</p>
+            <p class="product-price" id="price-small">Small: PHP 100.00</p>
+            <p class="product-price" id="price-medium">Medium: PHP 115.00</p>
+            <p class="product-price" id="price-large">Large: PHP 130.00</p>
+
+
+            <div class="order-details">
+                <label for="size">Select Size:</label>
+                <select id="size">
+                    <option value="Small" data-price="100">Small</option>
+                    <option value="Medium" data-price="115">Medium</option>
+                    <option value="Large" data-price="130">Large</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="0" min="0">
+
+
+                <p class="total-price" id="total-price">Total: PHP 0.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Function to update the total price
+    function updateTotalPrice() {
+        const sizeSelect = document.getElementById("size");
+        const quantityInput = document.getElementById("quantity");
+        const totalPriceElement = document.getElementById("total-price");
+
+        // Get the selected size and its corresponding price
+        const selectedSize = sizeSelect.options[sizeSelect.selectedIndex];
+        const price = parseFloat(selectedSize.getAttribute("data-price"));
+
+        // Get the selected quantity
+        const quantity = parseInt(quantityInput.value);
+
+        // Calculate the total price
+        const totalPrice = price * quantity;
+
+        // Update the total price on the page
+        totalPriceElement.textContent = `Total: PHP ${totalPrice.toFixed(2)}`;
+    }
+
+    // Add event listeners to update the total price when size or quantity is changed
+    document.getElementById("size").addEventListener("change", updateTotalPrice);
+    document.getElementById("quantity").addEventListener("input", updateTotalPrice);
+
+    // Initial total price update
+    updateTotalPrice();
+</script>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Gong Cha</h3>
+                <p>International beverage franchise specializing in freshly prepared premium tea, bubble tea, and coffee.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="../HTML/menu.html" class="active">Menu</a></li>
+                    <li><a href="../HTML/galery.html">Gallery</a></li>
+                    <li><a href="../HTML/review.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <p>Mall of Asia, Pasay City, Philippines</p>
+                <p>gongcha.ph</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Gong Cha. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

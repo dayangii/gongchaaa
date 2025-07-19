@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONG CHA Gallery</title>
+    
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+    <!-- External CSS (use the provided custom styles) -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <style>
+        /* Basic Reset */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f7f7; /* Light background */
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Gallery Section */
+        #gallery {
+            width: 80%;  /* Adjust width as necessary */
+            max-width: 1200px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-size: 2.9rem;
+            color: #0c0c0c;
+            margin-bottom: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        /* Swiper container */
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Each swiper slide (movie poster) */
+        .swiper-slide {
+            width: 250px;  /* Adjust the width of each image */
+            height: 350px;  /* Adjust the height of each image */
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow around the images */
+            border-radius: 8px;  /* Rounded corners */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transitions for transform and box-shadow */
+        }
+
+        /* Hover effect on images */
+        .swiper-slide:hover {
+            transform: scale(1.05);  /* Slightly zoom in on hover */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+        }
+
+        /* Adding reflection */
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+
+        /* Swiper effect */
+        .swiper-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Adjust Swiper navigation buttons if needed */
+        .swiper-button-next, .swiper-button-prev {
+            color: #fff;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        /* Customize Swiper pagination dots */
+        .swiper-pagination-bullet {
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .swiper-pagination-bullet:hover {
+            background-color: #f3c80b; /* Highlight pagination dot on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../IMAGES/Screenshot 2025-05-01 200356.png" alt="Gong Cha Logo" />
+        </div>
+        <nav class="nav-links">
+            <a href="..//HTML/index.html">Home</a>
+            <a href="../HTML/fourmenu.html">Menu</a>
+            <a href="../HTML/galery.html" class="active">Gallery</a>
+            <a href="../HTML/review.html">Reviews</a>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h1>Gallery of Gongcha</h1>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/image1.jpg" alt="Bumblebee">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/image2.jpg" alt="Avengers Infinity War">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/image3.jpg" alt="Bloodshot">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/image4.jpg" alt="Fast & Furious 6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/image5.jpg" alt="Die Hart">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/imagae6.jpg" alt="Dragon Hunting">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../IMAGES/gallery/image7.jpg" alt="Puss in Boots">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        // Initialize Swiper with 3D Coverflow effect
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow", // Apply the coverflow effect
+            grabCursor: true, // Enable grabbing the slides
+            centeredSlides: true, // Center active slide
+            slidesPerView: "auto", // Automatically adjust the number of slides visible
+            coverflowEffect: {
+                rotate: 15, // Rotate the slides for 3D effect
+                stretch: 0, // No stretching of slides
+                depth: 300, // Depth of the effect
+                modifier: 1, // Intensity of the effect
+                slideShadows: true, // Enable slide shadows
+            },
+            loop: true, // Loop the slides
+            speed: 800, // Smooth transition speed
+            spaceBetween: 20, // Space between slides
+        });
+    </script>
+</body>
+</html>

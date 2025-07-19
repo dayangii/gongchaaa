@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONG CHA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Google Fonts for Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header class="animate-header">
+        <div class="logo">
+            <img src="../IMAGES/Screenshot 2025-05-01 200356.png" alt="Gong Cha Logo" />
+        </div>        
+        <nav class="nav-links">
+            <a href="..//HTML/index.html">Home</a>
+            <a href="../HTML/fourmenu.html" class="active">Menu</a>
+            <a href="../HTML/galery.html">Gallery</a>
+            <a href="../HTML/review.html">Reviews</a>
+        </nav>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <nav class="sub-navbar">
+            <div class="menu-filters">
+                <a href="../HTML/menu.html" class="filter-btn active">Milk Tea</a>
+                <a href="../HTML/wintermelon.html" class="filter-btn">Wintermelon Mania</a>
+                <a href="../HTML/chocoloco.html" class="filter-btn">Choco Loco</a>
+                <a href="../HTML/coffee.html" class="filter-btn">Coffee Special</a>
+                <a href="../HTML/fruitseries.html" class="filter-btn">Fruit Series</a>
+                <a href="../HTML/fruittea.html" class="filter-btn">Fruit Tea</a>
+                <a href="../HTML/seasonal.html" class="filter-btn">Seasonal Drinks</a>
+                <a href="../HTML/oreoseries.html" class="filter-btn">Oreo Series</a>
+                <a href="../HTML/strawberry.html" class="filter-btn">Strawberry Series</a>
+                <a href="../HTML/icecream.html" class="filter-btn">Ice Cream Series</a>
+            </div>
+        </nav>
+
+        <div class="menu-grid">
+
+            <!-- Image 1: Brown Sugar Milk Tea -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/brownsugarmilktea_new2-removebg-preview.png" height="200px" alt="Brown Sugar Milk Tea">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/360_F_1335462521_A5Zji0EJ4tHNAhgFhe0AlSqQi1axlzKw-removebg-preview.png" alt="Green Tea Leaves" />
+                            <div class="menu-card-content">
+                                <h3>Brown Sugar</h3>
+                                <div class="price">₱115.00</div>
+                            </div>
+                            <a href="../MILKTEA ORDER/brownsugar.html" class="order-btn">+</a>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Brown Sugar</h3>
+                            <p>Rich and creamy milk tea infused with caramelized brown sugar syrup.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/brownsugar.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 2: Caramel Milk Tea -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Caramel-Milk-Tea-600x600-removebg-preview.png" height="200px" alt="Caramel Milk Tea">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/istockphoto-1262299380-612x612-removebg-preview.png" alt="Caramel Syrup" />
+                            <div class="menu-card-content">
+                                <h3>Caramel</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/caramel.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Caramel</h3>
+                            <p>Smooth milk tea with rich caramel syrup for a sweet and buttery flavor.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/caramel.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 3: Honey Milk Tea -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Honey-Milk-Tea-600x600-removebg-preview.png" height="200px" alt="Honey Milk Tea">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/istockphoto-1262299380-612x612-removebg-preview.png" alt="Honey Syrup" />
+                            <div class="menu-card-content">
+                                <h3>Honey</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/honey.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Honey</h3>
+                            <p>Delicious honey flavored milk tea with a smooth, sweet taste.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/honey.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 5: Matcha Milk Tea -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Matcha-Milk-Tea-600x600-removebg-preview.png" height="200px" alt="Matcha Milk Tea">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/pngtree-green-matcha-leaf-png-image_13371321-removebg-preview.png" alt="Matcha" />
+                            <div class="menu-card-content">
+                                <h3>Matcha Milk Tea</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/matcha.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Matcha Milk Tea</h3>
+                            <p>A smooth and creamy milk tea made with premium matcha powder.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/matcha.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 6: Milk Green Tea -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Milk-Green-Tea-600x600-removebg-preview.png" height="200px" alt="Milk Green Tea">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/images__3_-removebg-preview.png" alt="Taro Root" />
+                            <div class="menu-card-content">
+                                <h3>Milk Green Tea</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/greentea.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Milk Green Tea</h3>
+                            <p>A creamy green tea milk tea with a delicate, floral taste.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/greentea.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 7: Milk Tea -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Milk-Tea-600x600-removebg-preview-removebg-preview.png" height="200px" alt="Milk Tea">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/images__3_-removebg-preview.png" alt="Matcha Powder" />
+                            <div class="menu-card-content">
+                                <h3>Milk Tea</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/milkgreen.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Milk Tea</h3>
+                            <p>A rich and creamy milk tea for a satisfying treat.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/milkgreen.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 8: Milk Tea with 3js -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Milk-Tea-with-3Js-600x600-removebg-preview.png" height="200px" alt="Milk Tea with 3js">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/images__3_-removebg-preview.png" alt="Chocolate Syrup" />
+                            <div class="menu-card-content">
+                                <h3>Milk Tea with 3js</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/3js.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Milk Tea with 3js</h3>
+                            <p>A creamy and rich chocolate milk tea with 3 different flavors.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/3js.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 9: Milk Tea with Pearl -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/Milk-Tea-with-Pearl-600x600-removebg-preview.png" height="200px" alt="Milk Tea with Pearl">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/images__3_-removebg-preview.png" alt="Pearl" />
+                            <div class="menu-card-content">
+                                <h3>Milk Tea with Pearl</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/pearl.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Milk Tea with Pearl</h3>
+                            <p>A delicious milk tea with chewy pearls for an extra treat.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/pearl.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 10: Milk Tea W/ Herbal -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/MT-W-HJ-AND-WP-removebg-preview.png" height="200px" alt="Milk Tea W/ Herbal">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/images__3_-removebg-preview.png" alt="Herbal" />
+                            <div class="menu-card-content">
+                                <h3>Milk Tea W/ Herbal</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/herbal.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Milk Tea W/ Herbal</h3>
+                            <p>A tropical milk tea with a herbal twist for extra freshness.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/herbal.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 11: Milk Tea W/ White Pearl -->
+            <div class="menu-card milk-tea-card" data-category="milktea">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="../IMAGES/milktea/MT-W-WP-removebg-preview.png" height="200px" alt="Milk Tea W/ White Pearl">
+                            <img class="flavor-image" src="../IMAGES/FLAVORSS/images__3_-removebg-preview.png" alt="White Pearl" />
+                            <div class="menu-card-content">
+                                <h3>Milk Tea W/ White Pearl</h3>
+                                <div class="price">₱115.00</div>
+                                <a href="../MILKTEA ORDER/whitepearl.html" class="order-btn">+</a>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Milk Tea W/ White Pearl</h3>
+                            <p>A smooth and creamy milk tea with chewy white pearls.</p>
+                            <div class="price">₱115.00</div>
+                            <a href="../MILKTEA ORDER/whitepearl.html" class="order-btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="button-container">
+        <button id="showMoreBtn" class="show-more-btn">Show More</button>
+        <button id="showLessBtn" class="show-more-btn" style="display:none;">Show Less</button>
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Gong Cha</h3>
+                <p>International beverage franchise specializing in freshly prepared premium tea, bubble tea, and coffee. With a successful business model and proven track record, it has opened over 2000 stores in 23 countries.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Gong Cha Links</h3>
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="../HTML/menu.html">Menu</a></li>
+                    <li><a href="../HTML/galery.html">Gallery</a></li>
+                    <li><a href="../HTML/review.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <p>Mall of Asia, Pasay City, Philippines</p>
+                <p>Page · Bubble tea shop</p>
+                <p>gongcha.ph</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Diana & Gicela. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
